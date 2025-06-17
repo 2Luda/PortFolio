@@ -1,0 +1,276 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PortFolio</title>
+    <style>
+        /*a {*/
+        /*    text-decoration: none!important;*/
+        /*    color: white !important;*/
+        /*}*/
+        a:link {
+            color: blue; /* 방문하지 않은 링크의 색상 */
+            text-decoration: none; /* 방문하지 않은 링크에 밑줄 표시 */
+        }
+
+        a:visited {
+            color: purple; /* 방문한 링크의 색상 */
+            text-decoration: none
+        }
+
+        a:hover {
+            color: red; /* 마우스 오버 시 링크 색상 */
+            text-decoration: none; /* 마우스 오버 시 밑줄 제거 */
+        }
+
+        a:active {
+            color: green; /* 클릭 중일 때 링크 색상 */
+        }
+
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            /*background-color: #0094ff;*/
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background: linear-gradient(90deg, rgba(112, 21, 244, 1) 0%, rgba(206, 44, 246, 1) 50%);
+        }
+        section {
+            width: 70%;
+            /*background-color: gray;*/
+            /*height: 300px;*/
+            margin-bottom: 40px;
+            margin-top: 40px;
+
+        }
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+            outline: none;
+        }
+        .btn-9 {
+            border: none;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .btn-9:after {
+            position: absolute;
+            content: " ";
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1fd1f9;
+            background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+            transition: all 0.3s ease;
+        }
+        .btn-9:hover {
+            background: transparent;
+            box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2),
+            inset -4px -4px 6px 0 rgba(255,255,255,.5),
+            inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+            color: #fff;
+        }
+        /*.btn-9:hover:after {*/
+        /*    -webkit-transform: scale(2) rotate(180deg);*/
+        /*    transform: scale(2) rotate(180deg);*/
+        /*    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),*/
+        /*    -4px -4px 6px 0 rgba(116, 125, 136, .2),*/
+        /*    inset -4px -4px 6px 0 rgba(255,255,255,.5),*/
+        /*    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <header style="position: fixed;">
+        <div style="width: 100%; height: 100px; display: flex; justify-content: space-around; ">
+            <div style="width: 20%; display: flex; justify-content: center; align-items: center;
+            flex-direction:row;">
+                <div>
+                    <span>Jiho's PortFolio</span>
+                </div>
+            </div>
+            <div style="width: 30%; height:100%; display: flex; flex-direction: column; justify-content: center;">
+                <div style="display:flex; flex-direction: row; justify-content: space-around;">
+                <div>
+                    <a href="#profile">
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#about">
+                        <span>About</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#skills">
+                        <span>Skills</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#projects">
+                        <span>Projects</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <section id="profile" style="display: flex; flex-direction: column; align-items: center;padding: 80px;">
+            <img src="/PortFolio/A03EACB4-4DFA-439A-A3FE-084635A89FE6.png" style="height: 200px; margin-top: 50px" alt="">
+            <span style="font-weight: bold; font-size: 60px; margin-top: 10px; color:#CE2CF6;">Hi There, I am Jiho</span><br/>
+            <span style="font-weight: bold; font-size: 30px">My dream is to be a backend developer</span>
+            <span style="font-weight: bold; font-size: 30px">After work, I go to university and learn coding</span>
+            <div style="width: 100%; height: 30px;display: flex; flex-direction: row;justify-content: center; margin-top: 30px">
+                <a href="">
+                    <img src="1782765.png " style="height: 40px; margin-right: 10px" alt="email">
+                </a>
+                <a href="">
+                    <img src="25231.png" style="height: 40px; margin-right: 10px" alt="github">
+                </a>
+                <a href="">
+                    <img src="tistory.png" style="height: 40px;margin-right: 10px" alt="tistory">
+                </a>
+                <a href="">
+                    <img src="instagram-new.png" style="height: 40px;margin-right: 10px" alt="instagram">
+                </a>
+            </div>
+        </section>
+
+        <section id="about" style="display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100%; text-align: center; padding : 80px;">
+                <span style="font-size: 60px; font-weight: bold; border-bottom-style: solid;">About Me</span>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%">
+                   <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+                       <img src="dog.jpg" style="height: 300px; width: 300px;" alt="">
+                       <span style="color:#CE2CF6; font-size: 30px; margin-top: 20px; font-weight: bold;">Bae Jiho</span><br/>
+                       <span style="font-size: 20px;">010-2694-3934</span>
+                       <span style="font-size: 20px;">shl05234@naver.com</span>
+                   </div>
+                <div id="skills" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+                    <span style="color: #CE2CF6; font-size: 30px; font-weight: bold">Education</span>
+                    <span style="margin-top: 20px">Dongyang Mirae University</span>
+                    <span style="font-size: 15px; color: grey">2025~</span><br/>
+                    <span style="color: #CE2CF6; font-size: 30px; font-weight: bold; margin-top: 20px">Skills</span><br/>
+                        <div style=" width:70%; flex-wrap: wrap; display: flex; flex-direction: row; justify-content: center;" >
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">HTML</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">CSS</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">Java</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">Spring Boot</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">Spring MVC</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">Spring Data JPA</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">QueryDsl</button>
+                            <button class="custom-btn btn-9" style="margin-right: 10px;">Junit5</button>
+                        </div>
+                    <span style="color: #CE2CF6; font-size: 30px; font-weight: bold; margin-top: 30px">Activities</span><br/>
+                    <span style="font-size: 20px">스파르타 코딩클럽</span>
+                    <span style="font-size: 20px">내일배움캠프 4기</span>
+                    <span style="font-size: 15px; color: grey">2022.11~2023.03</span><br/>
+                </div>
+            </div>
+        </section>
+        <section id="projects" style="display:flex; flex-direction: column; align-items: center; padding-bottom: 80px;">
+            <div style="width: 100%; text-align: center; padding:50px 0px;">
+                <span style="font-size: 70px; border-bottom-style: solid; font-weight: bold;">Team Experience & Project</span>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+
+                <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 70%; background-color: white; padding:50px 80px; border-radius: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <h4 style="background-color: red; color: white; border-radius: 4px;">Develonity</h4>
+                        <span style="font-size: 15px; color: grey; border-bottom: 1px solid grey;">2023.02.06~2023.03.13</span>
+                        <div>
+                            <h5>입문 & 주니어 & 시니어 개발자 모두에게 가치 있는 커뮤니티</h5>
+                            <ul>
+                                <li>Redis를 사용하여 토큰 저장</li>
+                                <li>ID를 활용한 간접 참조 방식 설계</li>
+                                <li>게시글 JPA 상속 관계 매핑(단일 테이블 전략)</li>
+                                <li>AWS S3을 사용해 이미지 저장</li>
+                            </ul>
+                        </div>
+                        <div style="border-left: 4px solid blue;">
+                            <a href="https://github.com/dangddoong/Develonity">https://github.com/dangddoong/Develonity</a>
+                        </div>
+                        <div style="align-self: flex-start; border-radius: 8px; border:1px solid #f9c51d;
+                        background-color: rgba(249, 197, 29, .2); margin-top: 16px; padding: 4px 12px">
+                            Java Spring, Jpa, QueryDsl
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 70%; background-color: white; padding:50px 80px; border-radius: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <h4 style="background-color: red; color: white; border-radius: 4px;">루비네 집사</h4>
+                        <span style="font-size: 15px; color: grey; border-bottom: 1px solid grey;">2023.01.16 ~ 2023.01.25</span>
+                        <div>
+                            <h5>간단한 도움이 필요할 때, 심부름 서비스 루비네 집사!</h5>
+                            <ul>
+                                <li>Redis를 사용하여 토큰 저장</li>
+                                <li>ID를 활용한 간접 참조 방식 설계</li>
+                                <li>게시글 JPA 상속 관계 매핑(단일 테이블 전략)</li>
+                                <li>AWS S3을 사용해 이미지 저장</li>
+                            </ul>
+                        </div>
+                        <div style="border-left: 4px solid blue;">
+                            <a href="https://github.com/quipu1/ZIPSA-HelperPJT">https://github.com/quipu1/ZIPSA-HelperPJT</a>
+                        </div>
+                        <div style="align-self: flex-start; border-radius: 8px; border:1px solid #f9c51d;
+                        background-color: rgba(249, 197, 29, .2); margin-top: 16px; padding: 4px 12px">
+                            Java, Spring, Jpa, QueryDsl, JWT
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <footer style="padding-top: 50px; padding-bottom: 30px; background-color: black; font-weight: bold;">
+<!--        <div style="width: 100%; justify-content: space-between; display: flex;">-->
+<!--            <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">-->
+<!--                <span>© 2025. Bae Ji Ho. All rights reserved.</span>-->
+<!--            </div>-->
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <table style="width: 100%; font-size: 16px; line-height: 2; text-align: center; color: white;">
+                    <tr>
+                        <td rowspan="2" width="50%;">© 2025. Bae Ji Ho. All rights reserved.</td>
+                        <td style="vertical-align: top">Tel</td>
+                        <td style="vertical-align: top">Email</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top">010-2694-3934</td>
+                        <td style="vertical-align: top">shl05234@naver.com</td>
+                    </tr>
+                </table>
+            </div>
+
+    </footer>
+</body>
+</html>
